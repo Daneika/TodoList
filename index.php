@@ -13,11 +13,12 @@ if (file_exists("todo.json")) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-
+<div class="page">
 <h3>PHP Todo List</h3>
-    
+   
 <form action="newTodo.php" method="post">
     <input type="text" name="todo_name" placeholder="Enter your todo">
     <button>New Todo</button>
@@ -26,7 +27,7 @@ if (file_exists("todo.json")) {
 
 <?php
 foreach ($todos as $todoName => $todo): ?>
-<div style= "margin-bottom: 20px;">
+<div style= "margin-bottom: 30px;">
     <form style="display: inline-block" action="changeStatus.php" method="post">
         <input type="hidden" name="todo_name" value="<?php echo $todoName ?>">
         <input type="checkbox" <?php echo $todo["completed"] ? "checked" : "" ?>>
@@ -39,7 +40,7 @@ foreach ($todos as $todoName => $todo): ?>
 </div>
 <?php endforeach;
 ?>
-
+</div>
 <script>
 const checkboxes = document.querySelectorAll("input[type=checkbox]");
 checkboxes.forEach(ch => {

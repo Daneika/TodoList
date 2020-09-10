@@ -1,8 +1,5 @@
 {
     "Walk dog": {
-        "completed": true
-    },
-    "Gardening": {
         "completed": false
     },
     "Learn php": {

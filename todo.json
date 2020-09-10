@@ -1,11 +1,11 @@
 {
-    "Walk dog": {
-        "completed": false
-    },
-    "Learn php": {
-        "completed": false
-    },
-    "Clean the car": {
-        "completed": false
-    }
+  "Walk dog": {
+    "completed": false
+  },
+  "Learn php": {
+    "completed": false
+  },
+  "Clean the car": {
+    "completed": false
+  }
 }

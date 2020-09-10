@@ -15,7 +15,7 @@ if ($todoName) {
         $jsonArray = [];
     }
     $jsonArray[$todoName] = ["completed" => false];
-  
+
 
     file_put_contents("todo.json", json_encode($jsonArray, JSON_PRETTY_PRINT));
 }
